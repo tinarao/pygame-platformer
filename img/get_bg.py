@@ -1,5 +1,4 @@
 import pygame
-import os
 from os.path import join
 
 def get_background(name, WIDTH, HEIGHT):
@@ -21,3 +20,4 @@ def draw(window, background, bg_image, player):
     player.draw(window)
     
     pygame.display.update()
+    

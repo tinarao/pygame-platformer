@@ -1,9 +1,6 @@
 import pygame
 import os
 from dotenv import load_dotenv
-from background.get_bg import get_background, draw
-from classes.player import Player
-from handlers.movement import movement_handler
 
 pygame.init();
 pygame.display.set_caption("Платформер")
@@ -19,6 +16,10 @@ HEIGHT = int(os.getenv("SCREEN_HEIGHT"))
 window = pygame.display.set_mode((HEIGHT, WIDTH))
 
 def main(window):
+    from img.get_bg import get_background, draw
+    from classes.player import Player
+    from handlers.movement import movement_handler
+    
     clock = pygame.time.Clock()
     background, bg_image = get_background("Yellow.png", WIDTH, HEIGHT)
     player = Player(100, 100, 50, 50)

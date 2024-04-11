@@ -1,11 +1,10 @@
-import pygame
 import os
+import pygame
 from dotenv import load_dotenv
 
-pygame.init();
-pygame.display.set_caption("Платформер")
-
 load_dotenv()
+pygame.init()
+pygame.display.set_caption("Платформер")
 
 # consts
 FPS = 60
